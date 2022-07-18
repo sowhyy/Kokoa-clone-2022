@@ -1,0 +1,35 @@
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--horizontal-space);
+  margin-bottom: 15px;
+}
+
+.status-header__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.status-header__icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.status-header__icons span {
+  margin-left: 10px;
+}
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.status-header__icons .fa-cog:hover {
+  animation: rotateCog 1s linear infinite;
+}
